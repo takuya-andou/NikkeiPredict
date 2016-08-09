@@ -1,0 +1,133 @@
+
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow-x:hidden;
+}
+
+header{
+	width: 100%;
+	height: 80px;
+	background-color: gray;
+}
+
+header #logo{
+	float: left;
+	font-size: xx-large;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+
+header nav{
+	float: right;
+}
+
+header nav li{
+	float: left;
+	margin-right: 20px;
+}
+
+#wrapper{
+	width: 95%
+	margin-right:auto;
+	margin-left: auto;
+	background-color: #ccc;
+}
+
+
+@media only screen and (min-width: 768px) {
+	#article{
+		margin-top: 30px;
+	}
+	.contents {
+		width: 49%;
+		float: left;
+	}
+
+	.contents_left{
+	    float: right;
+	    width: 80%;
+	    margin-right: 5%;
+	}
+
+	.contents_right{
+	}
+
+	/* 共通 */
+	.bubble {
+	 height: 60%;
+	 display:inline-block;
+	 position: relative;
+	 background: #fff;
+	 padding: 30px;
+	 border: 1px solid #c8c8c8;
+	 border-radius: 10px;
+	 font-size: 20px;
+	 width: 100%;
+	}
+	/*.bubble:after{
+	 position: absolute;
+	 content: " ";
+	 height: 0;
+	 width: 0;
+	}*/
+	/* 左中央*/
+	.bubble-right:before{
+		border-left-color: #c8c8c8;
+		border-color: rgba(200, 200, 200, 0);
+		border-width: 16px;
+		margin-top: -16px;
+		left: 100%;
+		top: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	.bubble-right:after{
+	    border-color: rgba(255, 255, 255, 0);
+	    border-width: 15px;
+	    margin-top: -15px;
+		border-left-color: #fff;
+		left: 100%;
+		top: 50%;
+	    border: solid transparent;
+	    content: " ";
+	    height: 0;
+	    width: 0;
+	    position: absolute;
+	    pointer-events: none;
+	}
+	.robo{
+		height:60%
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	#article{
+		margin-top: 5px;
+	}
+	.contents {
+		width: 100%;
+	}
+	.bubble {
+	 height: 50%;
+	 display:inline-block;
+	 position: relative;
+	 background: #fff;
+	 padding: 10px;
+	 overflow: scroll;
+	 border: 1px solid #c8c8c8;
+	 border-radius: 10px;
+	 font-size: 16px;
+	 width: 100%;
+	}
+
+	.robo{
+		height:25%
+	}
+
+}
