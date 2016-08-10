@@ -52,32 +52,21 @@ header nav li{
 	}
 
 	.contents_right{
+		margin-left: 5%;
 	}
 
-	/* 共通 */
-	.bubble {
-	 height: 60%;
-	 display:inline-block;
-	 position: relative;
-	 background: #fff;
-	 padding: 30px;
-	 border: 1px solid #c8c8c8;
-	 border-radius: 10px;
-	 font-size: 20px;
-	 width: 100%;
+
+/*吹き出し*/
+	.arrow_box {
+		position: relative;
+		background: #ffffff;
+		border: 5px solid #666666;
+		height: 60%;
+		width: 100%;
+		font-size: 20px;
+		padding: 30px;
 	}
-	/*.bubble:after{
-	 position: absolute;
-	 content: " ";
-	 height: 0;
-	 width: 0;
-	}*/
-	/* 左中央*/
-	.bubble-right:before{
-		border-left-color: #c8c8c8;
-		border-color: rgba(200, 200, 200, 0);
-		border-width: 16px;
-		margin-top: -16px;
+	.arrow_box:after, .arrow_box:before {
 		left: 100%;
 		top: 50%;
 		border: solid transparent;
@@ -87,20 +76,20 @@ header nav li{
 		position: absolute;
 		pointer-events: none;
 	}
-	.bubble-right:after{
-	    border-color: rgba(255, 255, 255, 0);
-	    border-width: 15px;
-	    margin-top: -15px;
-		border-left-color: #fff;
-		left: 100%;
-		top: 50%;
-	    border: solid transparent;
-	    content: " ";
-	    height: 0;
-	    width: 0;
-	    position: absolute;
-	    pointer-events: none;
+
+	.arrow_box:after {
+		border-color: rgba(255, 255, 255, 0);
+		border-left-color: #ffffff;
+		border-width: 26px;
+		margin-top: -26px;
 	}
+	.arrow_box:before {
+		border-color: rgba(102, 102, 102, 0);
+		border-left-color: #666666;
+		border-width: 33px;
+		margin-top: -33px;
+	}
+
 	.robo{
 		height:60%
 	}
@@ -114,22 +103,45 @@ header nav li{
 	.contents {
 		width: 100%;
 	}
-	.bubble {
-	 height: 50%;
-	 display:inline-block;
-	 position: relative;
-	 background: #fff;
-	 padding: 10px;
-	 overflow: scroll;
-	 border: 1px solid #c8c8c8;
-	 border-radius: 10px;
-	 font-size: 16px;
-	 width: 100%;
+	.arrow_box {
+		position: relative;
+	    background: #ffffff;
+	    border: 4px solid #666666;
+	    height: 50%;
+	    margin-bottom: 10%;
+	    font-size: 16px;
+	    padding: 10px;
+
+	}
+	.arrow_box:after, .arrow_box:before {
+		top: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.arrow_box:after {
+		border-color: rgba(136, 183, 213, 0);
+		border-top-color: #ffffff;
+		border-width: 30px;
+		margin-left: -30px;
+	}
+	.arrow_box:before {
+		border-color: rgba(194, 225, 245, 0);
+		border-top-color: #666666;
+		border-width: 36px;
+		margin-left: -36px;
 	}
 
 	.contents_right{
 	text-align: center;
 	}
+
+
 	.robo{
 		height:25%
 	}
